@@ -1,11 +1,11 @@
 import React from "react";
-import { bannerImg } from "../assets";
+import { MyResume, bannerImg } from "../assets";
 import { commonStyle } from "../style";
 import { useTypewriter,Cursor } from "react-simple-typewriter";
-import { FaFacebook, FaLinkedin, FaGithub, FaReact, FaTwitter,FaFigma} from 'react-icons/fa';
-import { project1 } from "../assets";
+import { FaFacebook, FaLinkedin,  FaReact, FaTwitter,FaFigma} from 'react-icons/fa';
+
 import { SiTailwindcss} from "react-icons/si";
-import DownloadButton from "./ResumeItmes/ResumeDownloadButton";
+
 
 
 
@@ -72,7 +72,7 @@ I'm Unish, a highly motivated and dedicated React Frontend Developer with strong
         </div>
 
        
-<a href={project1} download="Resume" className={`w-90 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300`} >
+<a href={MyResume} download="Resume" className={`w-90 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300`} >
   Click Here To  Download My Resume
 </a>
       </div>
