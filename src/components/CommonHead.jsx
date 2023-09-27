@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CommonHead = ({head,subhead}) => {
+const CommonHead = ({subhead}) => {
   return (
     <div ClassName='text-white'>
     

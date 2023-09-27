@@ -6,7 +6,7 @@ import { myProjectData } from '../data'
 const MyProject = () => {
   return (
     <div id='projects' className='flex flex-col gap-10 py-[50px] mb-[20px] items-center'>
-        <CommonHead head="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK" subhead={"MY PROJECTS"} />
+        <CommonHead subhead={"MY PROJECTS"} />
         <div className='sm:grid flex flex-col sm:grid-flow-rows gap-12 grid-cols-2 lg:grid-cols-3 '>
             {myProjectData.map((data,index)=>{
                 return(
