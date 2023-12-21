@@ -1,5 +1,5 @@
 import React from "react";
-import CommonHead from "./commonHead";
+import CommonHead from "./CommonHead";
 import MyProjectbox from "./MyProjectbox";
 import { myProjectData } from "../data";
 
