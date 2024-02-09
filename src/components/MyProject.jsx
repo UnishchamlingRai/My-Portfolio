@@ -1,5 +1,5 @@
 import React from "react";
-import CommonHead from "./commonHead";
+import CommonHead from "./CommonHead";
 
 import MyProjectbox from "./MyProjectbox";
 import { myProjectData } from "../data";
@@ -10,8 +10,8 @@ const MyProject = () => {
       id="projects"
       className="flex flex-col gap-10 py-[50px] mb-[20px] items-center"
     >
-      {/* <CommonHead subhead={"MY PROJECTS"} /> */}
-      <h1>MY PROJECTS</h1>
+      <CommonHead subhead={"MY PROJECTS"} />
+      {/* <h1>MY PROJECTS</h1> */}
       <div className="sm:grid flex flex-col sm:grid-flow-rows gap-12 grid-cols-2 lg:grid-cols-3 ">
         {myProjectData.map((data, index) => {
           return (
