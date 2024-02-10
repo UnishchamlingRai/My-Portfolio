@@ -1,16 +1,14 @@
-import React from "react";
 import { MyResume, bannerImg } from "../assets";
 import { commonStyle } from "../style";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { FaReact, FaFigma } from "react-icons/fa";
 import {
-  FaFacebook,
-  FaLinkedin,
-  FaReact,
-  FaTwitter,
-  FaFigma,
-} from "react-icons/fa";
-
-import { SiTailwindcss } from "react-icons/si";
+  SiJavascript,
+  SiTailwindcss,
+  SiRedux,
+  SiNextdotjs,
+  SiNodedotjs,
+} from "react-icons/si";
 
 const Hero = () => {
   const [text] = useTypewriter({
@@ -43,46 +41,45 @@ const Hero = () => {
             Hey there, welcome to my Portfolio ! I'm Unish, a highly motivated
             and dedicated React Frontend Developer with strong knowledge of
             JavaScript, CSS, HTML, Tailwind CSS, Bootstrap, React js,Redux,
-            Redux Toolkit, Framer Motion and some knowledge on Node js. Skilled
-            in UI/UX design with expertise in Figma and Photoshop. Seeking an
-            opportunity to leverage my skills and knowledge to contribute to a
-            dynamic development team while continuously enhancing my expertise.
+            Redux Toolkit, Framer Motion and some knowledge on Node js.Seeking
+            an opportunity to leverage my skills and knowledge to contribute to
+            a dynamic development team while continuously enhancing my
+            expertise.
           </p>
         </div>
 
-        <div className="flex justify-between sm:flex-row flex-col gap-10">
+        <div className="flex justify-between sm:flex-row flex-col gap-4">
           <div className="flex flex-col gap-3">
-            <p>FIND ME IN</p>
+            <p>TECH STACK</p>
             <ul className="flex gap-4">
               <li className={`${commonStyle.bannerIcons}`}>
-                <a href="https://www.facebook.com/profile.php?id=100087187351831">
-                  <FaFacebook />
-                </a>
+                <FaReact />
+              </li>
+
+              <li className={`${commonStyle.bannerIcons}`}>
+                <SiTailwindcss />
               </li>
               <li className={`${commonStyle.bannerIcons}`}>
-                <a href="https://www.linkedin.com/in/unish-rai-4a1b4324b/">
-                  <FaLinkedin />
-                </a>
-              </li>
-              <li className={`${commonStyle.bannerIcons}`}>
-                <a href="https://twitter.com/UnishRai14">
-                  <FaTwitter />
-                </a>
+                <SiJavascript />
               </li>
             </ul>
           </div>
 
           <div className="flex flex-col gap-4">
-            <p>BEST SKILL IN</p>
+            <p className="text-black">.</p>
             <ul className="flex gap-3">
               <li className={`${commonStyle.bannerIcons}`}>
-                <FaReact />
+                <SiNextdotjs />
+              </li>
+
+              <li className={`${commonStyle.bannerIcons}`}>
+                <SiRedux />
+              </li>
+              <li className={`${commonStyle.bannerIcons}`}>
+                <SiNodedotjs />
               </li>
               <li className={`${commonStyle.bannerIcons}`}>
                 <FaFigma />
-              </li>
-              <li className={`${commonStyle.bannerIcons}`}>
-                <SiTailwindcss />
               </li>
             </ul>
           </div>

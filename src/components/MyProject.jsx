@@ -1,4 +1,3 @@
-import React from "react";
 import CommonHead from "./CommonHead";
 
 import MyProjectbox from "./MyProjectbox";
