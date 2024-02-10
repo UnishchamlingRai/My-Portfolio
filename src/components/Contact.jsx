@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { contactImg } from "../assets";
-import CommonHead from "./commonHead";
+import CommonHead from "./CommonHead";
 import { commonStyle } from "../style";
 
 import { FaFacebook, FaLinkedin,FaTwitter} from 'react-icons/fa';
