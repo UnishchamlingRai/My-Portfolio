@@ -40,11 +40,10 @@ const Hero = () => {
           <p className="font-titleFont text-[15px]">
             Hey there, welcome to my Portfolio ! I'm Unish, a highly motivated
             and dedicated React Frontend Developer with strong knowledge of
-            JavaScript, CSS, HTML, Tailwind CSS, Bootstrap, React js,Redux,
-            Redux Toolkit, Framer Motion and some knowledge on Node js.Seeking
-            an opportunity to leverage my skills and knowledge to contribute to
-            a dynamic development team while continuously enhancing my
-            expertise.
+            JavaScript, CSS, HTML, Tailwind CSS, React js,Redux, Framer Motion
+            and some knowledge on Node js.Seeking an opportunity to leverage my
+            skills and knowledge to contribute to a dynamic development team
+            while continuously enhancing my expertise.
           </p>
         </div>
 
