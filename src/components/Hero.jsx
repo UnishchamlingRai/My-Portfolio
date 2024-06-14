@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="gap-10 flex mt-10 justify-between items-center lg:flex-row flex-col border-solid border-black border-b-[1px] py-6"
+      className="gap-10 flex mt-10 justify-between content-center items-center lg:flex-row flex-col border-solid border-black border-b-[1px] py-6"
     >
       <div className="flex flex-col gap-10 flex-1">
         <div className="flex gap-2 flex-col">
@@ -93,9 +93,9 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="flex flex-1">
-        <div className="lg:block hidden bg-gradient-to-r rounded-2xl shadow-shadowOne h-[608px] w-[580px] absolute z-[0] top-[50%]"></div>
-        <img src={bannerImg} alt="" className="z-[2]" />
+      <div className="flex flex-1 justify-center items-center relative">
+        <div className="items-center lg:block hidden bg-gradient-to-r rounded-2xl shadow-shadowOne h-[80%] w-[80%] absolute z-[0] top-[20%]"></div>
+        <img src={bannerImg} alt="profile img" className="text-center z-[0] h-[60%] w-[60%]" />
       </div>
     </section>
   );

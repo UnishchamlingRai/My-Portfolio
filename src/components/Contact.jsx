@@ -102,7 +102,7 @@ const Contact = () => {
               If you have any question, feel free to contact me.
               </p>
               <p className="text-base text-gray-400 flex items-center gap-2">
-                Phone: <span className="text-lightText">+977 9829797268</span>
+                Phone: <span className="text-lightText">+977 9749827892</span>
               </p>
               <p className="text-base text-gray-400 flex items-center gap-2">
                 Email:{" "}
