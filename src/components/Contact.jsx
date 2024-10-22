@@ -1,21 +1,20 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { contactImg } from "../assets";
 import CommonHead from "./CommonHead";
 import { commonStyle } from "../style";
 
-import { FaFacebook, FaLinkedin,FaTwitter} from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 const Contact = () => {
-  
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
-  
+
   const [formData, setFormData] = useState({
     username: "",
-    phoneNumber: "98",
+    phoneNumber: "",
     email: "",
     message: "",
   });
-  let{username,phoneNumber,email,message}=formData
+  let { username, phoneNumber, email, message } = formData;
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -30,11 +29,9 @@ const Contact = () => {
       .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
   };
   // ========== Email Validation end here ================
-  
 
-  const handleSend =async (e) => {
+  const handleSend = async (e) => {
     e.preventDefault();
-   
 
     if (username === "") {
       setErrMsg("Username is required!");
@@ -51,31 +48,25 @@ const Contact = () => {
         `Thank you dear ${username}, Your Messages has been sent Successfully!`
       );
       setErrMsg("");
-      setFormData("")
-      console.log(formData)
-      console.log(username,email,phoneNumber,message)
+      setFormData("");
+      console.log(formData);
+      console.log(username, email, phoneNumber, message);
       const response = await fetch("https://formspree.io/f/mnqkgozv", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    if (response.ok) {
-    alert("Successful submission logic")
-    } else {
-     alert("Error")
+      if (response.ok) {
+        alert("Successful submission logic");
+      } else {
+        alert("Error");
+      }
     }
-    
-    }
-
-    
   };
 
-
-
-  
   return (
     <section
       id="contact"
@@ -99,10 +90,10 @@ const Contact = () => {
                 Frontend Developer
               </p>
               <p className="text-base text-gray-400 tracking-wide">
-              If you have any question, feel free to contact me.
+                If you have any question, feel free to contact me.
               </p>
               <p className="text-base text-gray-400 flex items-center gap-2">
-                Phone: <span className="text-lightText">+977 9749827892</span>
+                Phone: <span className="text-lightText">+977 9708725084</span>
               </p>
               <p className="text-base text-gray-400 flex items-center gap-2">
                 Email:{" "}
@@ -115,22 +106,29 @@ const Contact = () => {
               </h2>
               <div className="flex gap-4">
                 <span className={`${commonStyle.bannerIcons}`}>
-                <a href="https://www.facebook.com/profile.php?id=100087187351831"><FaFacebook /></a>
+                  <a href="https://www.facebook.com/profile.php?id=100087187351831">
+                    <FaFacebook />
+                  </a>
                 </span>
                 <span className={`${commonStyle.bannerIcons}`}>
-                <a href="https://www.linkedin.com/in/unish-rai-4a1b4324b/"><FaLinkedin /></a>
+                  <a href="https://www.linkedin.com/in/unish-rai-4a1b4324b/">
+                    <FaLinkedin />
+                  </a>
                 </span>
                 <span className={`${commonStyle.bannerIcons}`}>
-                <a href="https://twitter.com/UnishRai14"><FaTwitter /></a>
+                  <a href="https://twitter.com/UnishRai14">
+                    <FaTwitter />
+                  </a>
                 </span>
               </div>
             </div>
           </div>
           {/* LeftContact */}
           <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
-            
-            
-            <form onSubmit={handleSend} className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
+            <form
+              onSubmit={handleSend}
+              className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5"
+            >
               {errMsg && (
                 <p className="py-3 bg-gradient-to-r from-[#1e2024] to-[#23272b] shadow-shadowOne text-center text-orange-500 text-base tracking-wide animate-bounce">
                   {errMsg}
@@ -142,23 +140,21 @@ const Contact = () => {
                 </p>
               )}
 
-
               <div className="w-full flex flex-col lgl:flex-row gap-10">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
                   <p className="text-sm text-gray-400 uppercase tracking-wide">
                     Your name
                   </p>
                   <input
-                  type="text"
-                  id="username"
-                  name="username"
-                  onChange={handleChange}
+                    type="text"
+                    id="username"
+                    name="username"
+                    onChange={handleChange}
                     value={username}
                     className={`${
                       errMsg === "Username is required!" &&
                       "outline-designColor"
                     } ${commonStyle.contactInput}`}
-                    
                   />
                 </div>
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
@@ -166,9 +162,9 @@ const Contact = () => {
                     Phone Number
                   </p>
                   <input
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  onChange={handleChange}
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    onChange={handleChange}
                     value={phoneNumber}
                     className={`${
                       errMsg === "Phone number is required!" &&
@@ -183,9 +179,9 @@ const Contact = () => {
                   Email
                 </p>
                 <input
-                name="email"
-                id="email"
-                onChange={handleChange}
+                  name="email"
+                  id="email"
+                  onChange={handleChange}
                   value={email}
                   className={`${
                     errMsg === "Please give your Email!" &&
@@ -195,18 +191,14 @@ const Contact = () => {
                 />
               </div>
 
-
-              
-
-
               <div className="flex flex-col gap-4">
                 <p className="text-sm text-gray-400 uppercase tracking-wide">
                   Message
                 </p>
                 <textarea
-                name="message"
-                id="message"
-                onChange={handleChange}
+                  name="message"
+                  id="message"
+                  onChange={handleChange}
                   value={message}
                   className={`${
                     errMsg === "Message is required!" && "outline-designColor"
@@ -217,8 +209,8 @@ const Contact = () => {
               </div>
               <div className="w-full">
                 <button
-                type="submit"
-                // disabled={state.submitting}
+                  type="submit"
+                  // disabled={state.submitting}
                   className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
                   Send Message
@@ -235,9 +227,6 @@ const Contact = () => {
                 </p>
               )}
             </form>
-
-
-
           </div>
         </div>
       </div>

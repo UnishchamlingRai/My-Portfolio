@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="flex gap-2 flex-col">
           <p>WELCOME TO MY WORLD</p>
           <h1 className="text-6xl text-white font-bodyFont font-semibold">
-            Hi, I'm<span className="text-designColor"> Unish Rai</span>
+            Hi, I am<span className="text-designColor"> Unish Rai</span>
           </h1>
           <span className="text-2xl text-white font-semibold">
             a {text}
@@ -38,12 +38,12 @@ const Hero = () => {
           </span>
 
           <p className="font-titleFont text-[15px]">
-            Hey there, welcome to my Portfolio ! I'm Unish, a highly motivated
+            Hey there, welcome to my Portfolio ! I am Unish, a highly motivated
             and dedicated React Frontend Developer with strong knowledge of
-            JavaScript, CSS, HTML, Tailwind CSS, React js,Redux, Framer Motion
-            and some knowledge on Node js.Seeking an opportunity to leverage my
-            skills and knowledge to contribute to a dynamic development team
-            while continuously enhancing my expertise.
+            JavaScript, CSS, HTML, Tailwind CSS, React js, Nextjs,Redux, Framer
+            Motion and some knowledge on Node js and Mongodb.Seeking an
+            opportunity to leverage my skills and knowledge to contribute to a
+            dynamic development team while continuously enhancing my expertise.
           </p>
         </div>
 
@@ -95,7 +95,11 @@ const Hero = () => {
 
       <div className="flex flex-1 justify-center items-center relative">
         <div className="items-center lg:block hidden bg-gradient-to-r rounded-2xl shadow-shadowOne h-[80%] w-[80%] absolute z-[0] top-[20%]"></div>
-        <img src={bannerImg} alt="profile img" className="text-center z-[0] h-[60%] w-[60%]" />
+        <img
+          src={bannerImg}
+          alt="profile img"
+          className="text-center z-[0] h-[60%] w-[60%]"
+        />
       </div>
     </section>
   );
