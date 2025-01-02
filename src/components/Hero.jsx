@@ -12,7 +12,7 @@ import {
 
 const Hero = () => {
   const [text] = useTypewriter({
-    words: ["Coder.", "Frontend Developer", "UI Designer"],
+    words: ["Coder.", "MERN Stack Developer", "Web developer"],
     loop: true,
     typeSpeed: 10,
     delaySpeed: 2000,
@@ -38,12 +38,15 @@ const Hero = () => {
           </span>
 
           <p className="font-titleFont text-[15px]">
-            Hey there, welcome to my Portfolio ! I am Unish, a highly motivated
-            and dedicated React Frontend Developer with strong knowledge of
-            JavaScript, CSS, HTML, Tailwind CSS, React js, Nextjs,Redux, Framer
-            Motion and some knowledge on Node js and Mongodb.Seeking an
-            opportunity to leverage my skills and knowledge to contribute to a
-            dynamic development team while continuously enhancing my expertise.
+            Hey there, welcome to my Portfolio ! I am Unish, a highly skilled
+            MERN Stack developer bringing 2 years of experience in designing and
+            developing robust web applications. Proficient in frontend and
+            back-end technologies, including React.js,Node.js, MongoDB, and
+            Express.js. Strong understanding of responsive design principles and
+            cross-browser compatibility. Proven ability to meet tight deadlines
+            and deliver high-quality code. A collaborative team player,
+            dedicated to ensuring seamless user experiences and designing
+            scalable solutions.
           </p>
         </div>
 

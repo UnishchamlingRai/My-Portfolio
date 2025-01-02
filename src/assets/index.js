@@ -8,10 +8,11 @@ import project4 from "./images/projects/project4.png";
 import project5 from "./images/projects/project5.png";
 import project6 from "./images/projects/captoneProject.png";
 import project7 from "./images/projects/theworldwoss.png";
+import daraz from "./images/projects/daraz.png";
 import natours from "./images/projects/natours.png";
 
 import contactImg from "./images/contact/contactImg.png";
-import MyResume from "./Resume/My Resume.pdf";
+import MyResume from "./Resume/FullStack.pdf";
 
 export {
   logo,
@@ -21,6 +22,7 @@ export {
   project3,
   project4,
   project5,
+  daraz,
   contactImg,
   MyResume,
   natours,

@@ -4,6 +4,7 @@ import { project3 } from "./assets";
 import { project4 } from "./assets";
 import { project7 } from "./assets";
 import { project6 } from "./assets";
+import { daraz } from "./assets";
 // import { project5 } from "./assets";
 import { natours } from "./assets";
 
@@ -63,44 +64,12 @@ export const myProjectData = [
     title: "Metaversus-Responsive-Website",
     dis: "This is fully Responsive website created by using React,TaiwindCss and framer motion",
   },
-];
-
-// Features Data
-export const featuresData = [
   {
-    id: 1,
-    icon: "bi bi-briefcase",
-    title: "Business Stratagy",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
-  },
-  {
-    id: 2,
-    icon: "bi bi-window-split",
-    title: "App Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
-  },
-  {
-    id: 3,
-    icon: "bi bi-search",
-    title: "SEO Optimisation",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
-  },
-  {
-    id: 4,
-    icon: "bi bi-phone-landscape-fill",
-    title: "Mobile Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
-  },
-  {
-    id: 5,
-    icon: "bi bi-brightness-high-fill",
-    title: "UX Design",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
-  },
-  {
-    id: 6,
-    icon: "bi bi-globe",
-    title: "Hosting Websites",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    id: 7,
+    projectLink: "https://daraz-clone-with-react.vercel.app/",
+    githubLink: "https://github.com/UnishchamlingRai/DarazCloneWithReact",
+    img: daraz,
+    title: "Daraz Clone",
+    dis: "A Daraz clone built using React,React query and Tailwindcss",
   },
 ];
